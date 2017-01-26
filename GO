@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+# install a default app 'Blah' if there is not one there already..
+cd /
+[ $(ls App | wc -l) = 0 ] && git clone https://github.com/frank-carnovale/Blah.git
+
+cd App
+morbo script/blah    # listens at env var MOJO_LISTEN; defaults to http://*:3000
+
