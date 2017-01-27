@@ -2,7 +2,7 @@
 
 yum -y install                                                                              \
     autoconf automake binutils bison flex gcc gcc-c++ gettext libtool make patch pkgconfig  \
-    redhat-rpm-config rpm-build rpm-sign git net-tools                                      \
+    redhat-rpm-config rpm-build rpm-sign git net-tools libaio                               \
     perl-Test-Exception perl-Test-Simple perl-Test-Warn perl-Carp-Clan perl-Class-Inspector \
     perl-CPAN perl-DBD-Pg perl-DBD-SQLite perl-Env perl-Module-Build perl-TermReadKey       \
     perl-Error perl-Git perl-YAML perl-DateTime perl-Module-Install
