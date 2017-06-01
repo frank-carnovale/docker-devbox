@@ -11,8 +11,10 @@ cd /usr/local && mkdir {share,lib64}/perl5
 
 cpan install Term::ReadLine::Perl                                                \
     DBIx::Class DBIx::Class::Schema::Loader DBIx::Class::Schema::Loader::Dynamic \
-    Mojolicious Mojolicious::Plugin::Tables Mojolicious::Plugin::OpenAPI         \
-    DateTime::Format::SQLite DateTime::Format::Pg
+    DateTime::Format::SQLite DateTime::Format::Pg Mojolicious                    \
+    Mojolicious::Plugin::Tables       \
+    Mojolicious::Plugin::OpenAPI      \
+    Mojolicious::Plugin::CORS
 
 mkdir /App
 
