@@ -14,7 +14,8 @@ cpan install Term::ReadLine::Perl                                               
     DateTime::Format::SQLite DateTime::Format::Pg Mojolicious                    \
     Mojolicious::Plugin::Tables       \
     Mojolicious::Plugin::OpenAPI      \
-    Mojolicious::Plugin::CORS
+    Mojolicious::Plugin::CORS         \
+    Moose # sorry
 
 mkdir /App
 
