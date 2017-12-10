@@ -85,6 +85,7 @@ cpan install                             \
     DBIx::Class                          \
     DBIx::Class::Schema::Loader          \
     DateTime::Format::Pg                 \
+    DateTime::Format::SQLite             \
     XML::SAX::Expat                      \
     Mojolicious                          \
     Mojolicious::Plugin::CORS            \
