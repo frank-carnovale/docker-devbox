@@ -1,0 +1,17 @@
+--- a TAP/Harness.pm
++++ b TAP/Harness.pm
+@@ -418,8 +418,12 @@ Any keys for which the value is C<undef> will be ignored.
+ 
+         $self->jobs(1) unless defined $self->jobs;
+ 
++        # Switch to TAP::Formatter::File if either HARNESS_NOTTY is set, or if
++        # STDOUT is not connect to a TTY and the user did not explicitly ask
++        # for color
++        my $stdout_is_tty = -t ( $arg_for{stdout} || \*STDOUT );
+         local $default_class{formatter_class} = 'TAP::Formatter::File'
+-          unless -t ( $arg_for{stdout} || \*STDOUT ) && !$ENV{HARNESS_NOTTY};
++            unless ( $stdout_is_tty || $arg_for{color} ) && !$ENV{HARNESS_NOTTY};
+ 
+         while ( my ( $attr, $class ) = each %default_class ) {
+             $self->$attr( $self->$attr() || $class );
+
