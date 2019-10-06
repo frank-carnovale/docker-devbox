@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM centos:8
 
 COPY builder.sh /
 COPY patches    /patches
