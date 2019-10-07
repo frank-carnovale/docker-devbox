@@ -19,8 +19,8 @@ cpan install                             \
 rm -rf /root/.cpan
 
 # fix problem with 'prove' not honouring -c flag; will now colorise output in Jenkins..
-(
-  cd /patches
-  patch /usr/share/perl5/vendor_perl/TAP/Harness.pm rt-cpan-org-71850
-)
+#(
+#  cd /patches
+#  patch /usr/share/perl5/vendor_perl/TAP/Harness.pm rt-cpan-org-71850
+#)
 
