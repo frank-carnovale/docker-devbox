@@ -14,9 +14,12 @@ cpan install                             \
     Mojolicious::Plugin::StaticLog       \
     DBIx::Class::Schema::Loader::Dynamic \
     Mojolicious::Plugin::Tables          \
-
+  || true
 
 rm -rf /root/.cpan
+
+echo done
+true
 
 # fix problem with 'prove' not honouring -c flag; will now colorise output in Jenkins..
 #(
