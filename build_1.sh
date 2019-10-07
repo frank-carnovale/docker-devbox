@@ -4,8 +4,8 @@ set -e
 
 echo 'LANG=C' >/etc/locale.conf
 
-yum -y install                                                                              \
-    autoconf automake binutils bison flex gcc gcc-c++ gettext libtool make patch pkgconfig  \
+yum -y install                                                          \
+    autoconf automake bison flex gcc gcc-c++ gettext libtool make patch \
     git net-tools libaio expat-devel
 
 yum -y install                  \
@@ -20,6 +20,7 @@ yum -y install                  \
     perl-Module-Build           \
     perl-Module-Runtime         \
     perl-LWP-Protocol-https     \
+    perl-Test                   \
     perl-XML-SAX                \
     perl-XML-Simple             \
     perl-YAML                   \
