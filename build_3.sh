@@ -24,6 +24,7 @@ cpan install                 \
     Test::More               \
     Test::Warn               \
     Text::Balanced           \
+    YAML::XS                 \
     namespace::clean         \
 
 
